@@ -83,8 +83,7 @@ namespace MartianRobots.Test
         [TestMethod]
         public void GivenAMovement_WhenCallAnyMovement_MovementIsNotValidAndRobotIsNotLost()
         {
-            
-               var mockBar = new Mock<IPlanetSurface>();
+            var mockBar = new Mock<IPlanetSurface>();
             bool lost = false;
             mockBar.Setup(mock => mock.IsValidPosition(It.IsAny<Position>(), out lost)).Returns(true);
             Robot robot = new Robot
