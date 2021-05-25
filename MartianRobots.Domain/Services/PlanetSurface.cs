@@ -7,8 +7,8 @@ namespace MartianRobots.Domain.Models
     {
         private const int MAX_X = 50;
         private const int MAX_Y = 50;
-        public int Widht { get; set; }
-        public int Height { get; set; }
+        private readonly int Widht;
+        private readonly int Height;
 
         public List<Position> LostPoints;
 
